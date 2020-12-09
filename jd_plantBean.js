@@ -359,7 +359,7 @@ function showTaskProcess() {
   })
 }
 //助力好友
-async function doHelp() {
+/*async function doHelp() {
   for (let plantUuid of newShareCodes) {
     console.log(`开始助力京东账号${$.index} - ${$.nickName}的好友: ${plantUuid}`);
     if (!plantUuid) continue;
@@ -398,6 +398,7 @@ function showMsg() {
     $.msg($.name, subTitle, message);
   }
 }
+*/
 // ================================================此处是API=================================
 //每轮种豆活动获取结束后,自动收取京豆
 async function getReward() {
