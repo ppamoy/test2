@@ -99,7 +99,7 @@ async function jdPlantBean() {
     message += `【上期时间】${roundList[0].dateDesc.replace('上期 ', '')}\n`;
     message += `【上期成长值】${roundList[0].growth}\n`;
     await receiveNutrients();//定时领取营养液
-    await doHelp();//助力
+    //await doHelp();//助力
     await doTask();//做日常任务
     await doEgg();
     await stealFriendWater();
@@ -359,7 +359,7 @@ function showTaskProcess() {
   })
 }
 //助力好友
-/*async function doHelp() {
+async function doHelp() {
   for (let plantUuid of newShareCodes) {
     console.log(`开始助力京东账号${$.index} - ${$.nickName}的好友: ${plantUuid}`);
     if (!plantUuid) continue;
@@ -398,7 +398,7 @@ function showMsg() {
     $.msg($.name, subTitle, message);
   }
 }
-*/
+
 // ================================================此处是API=================================
 //每轮种豆活动获取结束后,自动收取京豆
 async function getReward() {
